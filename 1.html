@@ -111,14 +111,17 @@ display: inline;
     ">
   -->
   <!--
-  <input type="button" value="night" onClick="
-  if(document.getElementById('backcolor').value===nitgh){
-    document.getElementById('backcolor').style.backgroundColor='black';
-    document.getElementById('backcolor').style.color='white';
-    ">
-    <input type="button" value="day" onclick="
-     document. getElementById('backcolor').style.backgroundColor=' ivory';
-     document. getElementById('backcolor').style.color='black';
+  <input type="button" value="night" onclick="
+      var target=document.querySelector('body');
+        if(this.value==='night'){
+          target.style.backgroundColor ='black';
+          target.style.color ='white';
+          this.value='day';
+        }else{
+          target.style.backgroundColor ='ivory';
+          target.style.color='black';
+          this.value='night';
+        }
     ">
   -->
   <div>
