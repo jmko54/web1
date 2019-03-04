@@ -1,40 +1,119 @@
+
 <!doctype html>
+<html>
 <head>
-  <title> WEB1-HTML </title>
+  <title> WEB1-WELCOMEl</title>
   <meta charset="utf-8">
-<style>
-a{
-  color:purple;
-  text-decoration:none;
-}
-h1{
+  <style>
+    body {
+      margin:0;
+      display:inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      color:sienna;
+    }
+
+  h1 {
+    font-size:60px;
+    text-align:center;
+    border-bottom:1px solid maroon;
+    padding:50px;
+    margin:0;
+    padding-bottom: 90px;
+    font-style:italic;
+  }
+
+  ul {
+    border-right:2px solid maroon;
+    width:100px;
+    margin:0;
+    padding:40px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  #article {
+    padding-left:100px;
+    padding-right: 55px;
+  }
+
+  #grid {
+    border: 2px solid maroon;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+
+  }
+  @media(max-width:700px)  {
+    #grid{
+      display: block;
+      border:none;
+    }
+    ul{
+      border-right: none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+
+ .border {
+   color:Gainsboro;
   text-align: center;
-  font-size:45px;
-  border-bottom:2px solid black;
-  margin:0;
-  padding:20px;
+  border:2px solid chocolate;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
 }
-ul{
-  border-right:2px solid  black;
-  width:100px;
-  margin:0;
-  padding:20px;
-}
-#grid{
-  display:grid;
-  grid-template-columns: 150px 1fr;
-}
-#article, ul{
-  padding-left:32px;
-}
-body{
-  margin:0;
-}
-</style>
+
+  #test{
+    float:left;
+    margin-right:20px;
+    display:inline-block;
+    margin-left:0px;
+  }
+  img{
+    border:1px black solid;
+    border-radius: 6px;
+    padding:2px;
+    width:200px;
+  }
+  #backcolor{
+    background-color: ivory;
+    overflow: scroll;
+  }
+  .table{
+    border:1px solid brown;
+    font-size: 20px;
+    padding-right: : 20px;
+    padding-left: 10px;
+    display:inline-block;
+    overflow-y:scroll;
+    width:100%;
+    height: 200px;
+
+  }
+  #block{
+display: inline;
+  }
+  </style>
 </head>
-<body>
-  <h1><a href="index.html">-WEB-</a></h1>
-<div id= "grid">
+<body id="backcolor">
+  <!--
+  <input type="button" value="night" onClick="
+    document.getElementById('backcolor').style.backgroundColor='black';
+    document.getElementById('backcolor').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+     document. getElementById('backcolor').style.backgroundColor=' ivory';
+     document. getElementById('backcolor').style.color='black';
+    ">
+  -->
+  <div>
+      <h1><a href="index.html">-WELLCOME-</a></h1>
+  </div>
+   <div id="grid">
 <ul>
   <h4>
     <li><a href="1.html">HTML</a></li>
@@ -43,21 +122,103 @@ body{
   </h4>
 </ul>
 <div>
-  <div id="article">
-<h2><u>HTML이란?</u></h2>
-  <p>
-    Hyper Text Markup Language의 약자로써 월드와이드웹 문서를 작성하는
-    Markup Language 입니다. HTML 은 여러 태그들로 구성되어 있으며 각 태그들을 사용하여
-    원하는 형태의 문서를 만들어 갈 수 있습니다.
-    인터넷문서는 Hyper Text 의 원리를 이용하여 여러 문서를 링크시켜 다양한 정보를
-    손쉽게 검색하여 볼 수 있게 만들어 줍니다.
-    이러한 다양한 표현의 가능성과 쉬운 사용으로 월드와이드웹을 짧은 시간에
-    대중시키는데 원동력이 되었습니다.
-    <p style="margin-top:30px;">
- <img src="html.jpg" width="100%">
- <a href="https//:www.w3.org/TR/html51/" target="_blank" title="HTML5.1">
-   https//:www.w3.org/TR/html51/</a>
-   <div>
- </p>
+<div id="article">
+ <a href="html.jpg" style="width:16px; height:16px; padding:8px; background: url(
+   "html.jpg");">
+   <img id="test" src="html.jpg"><a/><div>
+
+  <h2>HTML이란?</h2>
+
+      HTML이란? Hyper Text Makup Language의 약자로써 얼드와이드 웹 문서를 작성하는 Markup
+      Language 입니다. HTML은 여러 태그들로 구성되어 있으며 각 태그들을 사용하여 원하는 형태의
+      문서를 만들어 갈 수 있습니다. 인터넷문서는 Hyper Text의 원리를 이용하여 여러 문서를
+      링크시켜 다양한 정보를 손쉽게 검색하여 볼 수 있게 만들어주며, 이러한 다양한 표현의
+        가능성과 쉬운 사용으로 월드와이드웹을 짧은 시간에 대중시키는데 원동력이 되었습니다.
+
+  <h2>HTML문서작성</h2>
+
+     HTML 문서의 작성은 일반 텍스트 에디터나 전용 에디터를 사용하면 쉽게 작성할수 있고,
+     일반 텍스트 문서와 같이 작성하면 된다
+      저장시 *.HTM 이나, *.HTML으로 저장하면 브라우저가
+     인터넷 문서를 인식하고 브라우저 화면에 뿌려주고 확장자는 위의 두가지 모두 가능하나 한
+     가지 주의대부분 자신의 계정이 있는 서버에 파일을 올릴 경우 처음으로 보여지는 파일의
+     경우에는 확장자를 *.HTML로 해야 됩니다.
+     <p class="border">*참조글 : 레이아웃 엔진은 무엇인가?&nbsp;&nbsp;
+     <a href="https://server-talk.tistory.com/249" style="color:Gainsboro">
+     https://server-talk.tistory.com/249 </a></p></span></div>
+
+
+ <h2>HTML tag구조</h2>
+ <span>
+    HTML의 기본 구조의 핵심은 태그입니다. 태그는 해당 영역이 어떤 역할을 해야 하는지
+    웹 브라우저의 레이아웃 엔진에 알려주는 역할을 하게 되며 예로 p태그로 감싸진 문장이
+    있다면, 웹브라우저에서 해당 문장
+     영역을 문단 (Paragragp)로 인식하게 됩니다 태그가
+    없다면 브라우저는 해당 영역이 어떤 역할을 해야되는지 모르기 때문에 기본 텍스트로
+    표현해주게 됩니다.
+    <span id="block">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                &lt;!doctype&nbsp;html&gt;
+              <br>
+                &lt;html&nbsp;lang=&quot;ko&quot;&gt;
+              <br>
+                &lt;head&gt;
+              <br>
+                &lt;meta&nbsp;charset=&quot;utf-8&quot;&gt;
+              <br>
+                &lt;title&gt;HTML5&nbsp;기본&nbsp;구성&lt;/title&gt;
+              <br>
+                &lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;webskills.kr&quot;&gt;
+              <br>
+                &lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;Share&nbsp;Web&nbsp;Skills&nbsp;Free&quot;&gt;
+              <br>
+                &lt;meta&nbsp;name=&quot;keywords&quot;&nbsp;content=&quot;HTML,&nbsp;CSS,&nbsp;XML,&nbsp;XHTML,&nbsp;JavaScript&quot;&gt;
+              <br>
+                &lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/style.css&quot;&gt;
+              <br>
+                &lt;!--[if&nbsp;lt&nbsp;IE&nbsp;9]&gt;
+              <br>
+                &lt;script&nbsp;src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+              <br>
+                &lt;![endif]--&gt;
+              <br>
+                &lt;/head&gt;
+              <br>
+                &lt;body&gt;
+              <br>
+                &lt;script&nbsp;src=&quot;js/script.js&quot;&gt;&lt;/script&gt;
+              <br>
+                &lt;/body&gt;
+              <br>
+                &lt;/html&gt;
+              </p>
+            </td>
+          </tbody>
+         </table>
+       </span>
+     </span>
+
+  <h2>마크업</h2>
+
+    HTML 마크업은 HTML 요소(엘리먼트, Elements)와 그들의 속성(Attributes)과 문자 기반
+    데이터 형태와 문자 참조와 엔티티 참조를 포함하는 몇 가지 핵심 구성 요소로 이루어져 있다.
+    또 다른 중요한 구성 요소로는 문서 형식 정의(DTD, Document Type Definition)를
+    명시하는 문서 형식 선언(document type declaration)이다. 차기 HTML 5에서는 DTD를
+    지정하지 않아도 되고 오직 레이아웃 모드로 지정된다.
+    Hello world 프로그램은 프로그래밍 언어와 스크립트 언어 그리고 마크업 언어를
+    비교하기 위해 사용되는 일반적인 컴퓨터 프로그램이다. 그리고 HTML에서의 Hello world
+    프로그램은 단 9줄에 불과하다.
+     이 문서는 상당부분<a href="http://www.sitepoint.com/a-basic-html5-template/">
+    http://www.sitepoint.com/a-basic-html5-template/</a> 의 설명에
+      기초하고<a href="http://www.w3schools.com/"> http://www.w3schools.com/의</a>
+      여러 문서들을 참조하여  작성하였음을 미리 밝힌다.html 5는 이전 버전인 xhtml이나
+      HTML 4와는 기본적인 개념에서는 같지만 상당한 변화가 이루어졌다.
+      그 변화가 무엇인지 기본적으로 살펴보기로 하자.
+
+</div>
 </body>
 </html>
