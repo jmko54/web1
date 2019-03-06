@@ -2,9 +2,106 @@
 <head>
   <title> WEB1-javaScript</title>
   <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    margin:0;
+    display:inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    color:sienna;
+  }
+
+h1 {
+  font-size:60px;
+  text-align:center;
+  border-bottom:1px solid maroon;
+  padding:50px;
+  margin:0;
+  padding-bottom: 90px;
+  font-style:italic;
+}
+
+ul {
+  border-right:2px solid maroon;
+  width:100px;
+  margin:0;
+  padding:40px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#article {
+  padding-left:100px;
+  padding-right: 55px;
+}
+
+#grid {
+  border: 2px solid maroon;
+  display:grid;
+  grid-template-columns: 150px 1fr;
+
+}
+@media(max-width:700px)  {
+  #grid{
+    display: block;
+    border:none;
+  }
+  ul{
+    border-right: none;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
+
+.border {
+ color:Gainsboro;
+text-align: center;
+border:2px solid chocolate;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 20px;
+}
+
+#test{
+  float:left;
+  margin-right:20px;
+  display:inline-block;
+  margin-left:0px;
+}
+img{
+  border:1px black solid;
+  border-radius: 6px;
+  padding:2px;
+  width:200px;
+}
+#backcolor{
+  background-color: ivory;
+  overflow: scroll;
+}
+.table{
+  border:1px solid brown;
+  font-size: 20px;
+  padding-right: : 20px;
+  padding-left: 10px;
+  display:inline-block;
+  overflow-y:scroll;
+  width:100%;
+  height: 200px;
+
+}
+#block{
+display: inline;
+}
+</style>
+<script src="color.js"></script>
 </head>
-<body>
+<body id ="backcolor">
+     <input id="night_day" type ="button" value="night" onclick="
+       nightDayHandler(this);
+       ">
   <h1><a href="index.html">WEB</a></h1>
  <div id="grid">
     <ul>
@@ -15,21 +112,15 @@
  <div>
   <div id="article">
 <h2>JavaScript</h2>
-  <strong>
     djfhdskweupijfjfjffjiiffihohtoqoetnmgfdgd.snmfs
-  </strong>
-  <br>
-  <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="HTML5.1"
-    style="text-decoration:underline;">
-  lksfiedm ghuopkf;lgndsh;gkndrijtir</a>egndndgdfa</p>
-  <img src="JavaScript.jpg" width="100%">
-  <p style="margin-top:30px;">
+  lksfiedm ghuopkf;lgndsh;gkndrijtiregndndgdfa
+  <a href="JavaScript.jpg" style="width:16px; height:30px; padding:8px; background: url(
+    "html.jpg");">
+    <img id="test" src="JavaScript.jpg"></a><div>
   oehfkjfjdfhdjfkjshjfhdfksjdkfhsdkjfhdsfdjskfjkdf
-  <br>sdjfhksjdhfkdsjfhkjdshkfahkjdhfksjdhf
-  fdgsngsnjfglkfgnfg,fds.gsdhgk.sdjfhks<br>
+  sdjfhksjdhfkdsjfhkjdshkfahkjdhfksjdhf
+  fdgsngsnjfglkfgnfg,fds.gsdhgk.sdjfhks
   jdhfkdsjfhkjdshkfahkjdhfksjdhfejh
   djfbaekbufbndmabfewunolfkdsnmn fagewholnd
-</p>
-<div>
 </body>
 </html>

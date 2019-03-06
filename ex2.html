@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <script>
+       var coworkers={
+         "programmer":"mark",
+         "designer":"Joo",
+         "date scientist":"changmin"
+       };
+       document.write("programmer:"+coworkers.programmer+"<br>");
+       document.write("designer:"+coworkers.designer+"<br>");
+       document.write("date scientist: " + coworkers["date scientist"]+"<br>");
+       coworkers.bookkeper="teaho";
+       document.write("bookkeper:"+coworkers.bookkeper+"<br>");
+    </script>
+    <ul>
+      <h1>iterate</h1>
+      <script>
+         for(var key in coworkers){
+           document.write(key+'<br>');
+         }
+      </script>
+      <script>
+         for(var key in coworkers){
+           document.write(coworkers[key]+'<br>');
+         }
+      </script>
+      <script>
+        for(var key in coworkers){
+          document.write(key+':'+coworkers[key]+'<br>');
+        }
+      </script>
+    </ul>
+  </body>
+</html>
