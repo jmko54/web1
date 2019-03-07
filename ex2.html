@@ -12,6 +12,7 @@
          "designer":"Joo",
          "date scientist":"changmin"
        };
+       var test = [1, 2, 3, 4, 5];
        document.write("programmer:"+coworkers.programmer+"<br>");
        document.write("designer:"+coworkers.designer+"<br>");
        document.write("date scientist: " + coworkers["date scientist"]+"<br>");
@@ -21,9 +22,11 @@
     <ul>
       <h1>iterate</h1>
       <script>
-         for(var key in coworkers){
+         for(var key in coworkers) {
            document.write(key+'<br>');
          }
+         console.log('aaa')
+
       </script>
       <script>
          for(var key in coworkers){
