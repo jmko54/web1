@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var body={
+        setColor:function(color){
+          document.querySelector('body').style.color =color;
+        },
+        setbackgroundColor:function(color){
+          document.querySelector('body').style.backgroundColor=color;
+        }
+      }
+      function nightDayHandler(self){
+        target=document.querySelector('body');
+        if(self.value==='night'){
+          body.setbackgroundColor('black');
+          body.setColor('white');
+          self.value='day';
+        } else{
+          body.setbackgroundColor('white');
+          body.setColor('black');
+          self.value='night';
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
+
+    <p>
+    웹페이지를 보다 보면 주기적으로 바뀌는 화면 또는 능동적인 지도나 2D/3D 그래픽,
+    동영상 등 웹 페이지상에 볼 수 있는 정보들을 좀 더 복잡하고 더 알맞게 표시됨이
+    가능해도록 하는 것이 자바스크립트이다. 우리가 지금 웹 기술이라는 것을 배우고 있는
+    입장에서 HTML, CSS와 함께 웹을 지탱하는 계층 구조에서 많은 역할을 자치하고 있음을
+    알 수 있다.
+    </p>
+  </body>
+</html>

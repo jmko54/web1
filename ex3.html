@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var body ={
+        setColor:function(color){
+          document.querySelector('body').style.color = color;
+        },
+        setbackgroundColor:function(color){
+          document.querySelector('body').style.backgroundColor = color;
+        }
+      }
+      var Links={
+        setColor:function(color){
+          var alist= document.querySelectorAll('a');
+           var i = 0;
+            while(i < alist.length){
+              alist[i].style.color=color;
+              i = i + 1;
+            }
+          }
+      }
+
+
+    function nightDayHandler(self){
+      target=document.querySelector('body');
+        if(self.value==='night'){
+          body.setbackgroundColor('black');
+          body.setColor('white');
+          self.value = 'day';
+
+          Links.setColor('powderblue');
+        } else{
+          body.setbackgroundColor('white');
+          body.setColor('black');
+          self.value = 'night';
+
+        Links.setColor('brown');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="ex3.html"><h1>test</h1></a>
+    <!--
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    ">
+    -->
+    <input id="night_day" type="button" value="night" onclick="
+     nightDayHandler(this);
+    ">
+
+   <ol>
+     <li><a href="ex3.html">test</a></li>
+     <li><a href="ex3.html">test</a></li>
+     <li><a href="ex3.html">test</a></li>
+  </ol>
+
+     웹페이지를 보다 보면 주기적으로 바뀌는 화면 또는 능동적인 지도나 2D/3D 그래픽,
+     동영상 등 웹 페이지상에 볼 수 있는 정보들을 좀 더 복잡하고 더 알맞게 표시됨이
+     가능해도록 하는 것이 자바스크립트이다.  우리가 지금 웹 기술이라는 것을 배우고 있는
+     입장에서 HTML, CSS와 함께 웹을 지탱하는 계층 구조에서 많은 역할을 자치하고 있음을
+     알 수 있다.
+
+  </body>
+</html>

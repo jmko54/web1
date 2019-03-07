@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+     <script>
+        var family=['joo','mark', 'jin', 'joon',]
+     </script>
+     <ul>
+     <script>
+       var i = 0;
+        while(i < family.length){
+          document.write('<li>'+family[i]+'</li>');
+          i= i + 1;
+        }
+     </script>
+     </ul>
+
+     <script>
+       function OneplusOne(){
+       document.write(1+1+'<br>');
+     }
+     OneplusOne();
+     </script>
+
+     <script>
+        function sum(left, right){
+          document.write(left + right);
+        }
+        sum(3, 7);
+
+     </script>
+     <h1>return</h1>
+
+     <script>
+       function sum2(left, right){
+         return(left+right);
+       }
+         document.write('<div style="color:red">'+sum2(4,5)+'</div>');
+         document.write('<div style="font-size:3rem;">'+sum2(3,2)+'</div>');
+     </script>
+
+<h1>object</h1>
+ <script>
+   var family={
+     "father":"joon",
+     "boyfreind":"mark",
+     "mather":"rim",
+     "brother":"jin"
+   };
+ document.write("boyfreind:"+family.boyfreind+"<br>");
+ </script>
+ <script>
+   for(var key in family){
+     document.write(key+':'+family[key]+'<br>');
+   }
+ </script>
+  </body>
+</html>
